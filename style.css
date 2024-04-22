@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.10rem;
+}
+
+body {
+    display: flex;
+    margin-top: 10vh;
+    justify-content: center;
+    background-image: url("background.jpg");
+
+}
+
+.main {
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    padding: 3vw;
+    background-color: rgb(231 231 231 / 88%);
+}
+
+.gender-section {
+    text-align: center;
+    margin: 3vh 3vw;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.info div {
+    margin: 2.4vw;
+}
+
+.display {
+    text-align: center;
+    margin: 3vh auto;
+}
+
+.btn-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: .8vh 10vw;
+}
+.hidden{
+       visibility: hidden;
+}
+.display {
+ 
+    background-color: white;
+    padding: 1vw;
+    border-radius: 6px;
+    box-shadow: 5px 5px 6px black;
+    font-family: monospace;
+}
+
+.display span{
+    color: #58585896;
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+    font-size: .9990em;
+    padding: 1vw;
+    text-align: center;
+}
+
+.info input {
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(235 235 235);
+    padding: .36vw;
+}
+
+button {
+    padding: .70vw .90vw;
+    border-radius: 9px;
+    border: 1px solid rgba(128, 128, 128);
+    box-shadow: 5px 5px 8px #888888;
+    font-weight: 700;
+}
+
+button:active {
+    border: 1px solid rgba(92, 89, 89);
+    background-color: rgb(187 184 184);
+    box-shadow: 2px 2px 4px #888888;
+    cursor: pointer;
+}
+
+button:hover {
+    border: 1px solid rgba(92, 89, 89);
+    background-color: rgb(187 184 184);
+    box-shadow: 2px 2px 4px #888888;
+    cursor: pointer;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI-Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="gender-section"><b>Gender</b> :
+            <input type="radio" name="morf" id="male"> Male
+            <input type="radio" name="morf" id="female"> Female
+        </div>
+
+        <div class="info">
+            <div class="weight">
+                <p><b>Weight</b></p> <input type="text" placeholder="Enter your Weight" id="input-weight">
+                <select name="" id="wunit">
+                    <option value="kg">Kgs</option>
+                    <option value="pound">Lbs</option>
+                    <option value="gm">Gms</option>
+                    <option value="st">St</option>
+                </select>
+            </div>
+
+            <div class="height">
+                <p><b>Height</b></p> <input type="text" placeholder="Enter your Height" id="input-height">
+                <select name="" id="hunit">
+                    <option value="cm">Cms</option>
+                    <option value="in">Inch</option>
+                    <option value="ft">Foot</option>
+                    <option value="mt">Mts</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="display hidden">
+           <span id="ex-msg"></span>
+        </div>
+
+        <div class="btn-section">
+            <button id="submit">Generate</button><button id="reset">Reset</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
