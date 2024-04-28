@@ -8,6 +8,17 @@ const reset = document.querySelector("#reset");
 let result = document.querySelector(".display");
 let displayMsg = document.querySelector("#ex-msg");
 
+let facts_area=document.querySelector(".facts span");
+let facts=["Aim for a BMI between 18.5-24.9 for optimal health.","Focus on habits, not only BMI number."," Health is holistic, BMI is just one factor."," Health is about balance not just BMI."," Obesity rate are 3x since 1975, worldwide."," Higher BMI is linked to higher rates of depression and mental health.","The concept of BMI is introduced by Belgain Mathematician & statistician Adolphe Quetelet.","BMI index was first used in early 19th century 1832.","BMI was initially called as Quetelet index,named after its creator."]
+let size=facts.length;
+// console.log(size);
+let prev=-1
+let rand=Math.floor(Math.random() * 9);
+if(rand!=prev){
+    facts_area.innerHTML=facts[rand];
+    prev=rand;
+}
+
 reset.addEventListener("click", () => {
     result.classList.add("hidden");
     weight.value = '';
@@ -49,7 +60,7 @@ submit.addEventListener("click", () => {
         bmi = weightVal / (heightVal * heightVal);
         if (isNaN(bmi)) bmi = "InValid";
         bmi = bmi.toFixed(2);
-        result.innerHTML = `<span>Your BMI is: </span> ${bmi}`;
+        result.innerHTML = `<span>Your BMI is: </span> <b>${bmi}</b>`;
 
         if (result.innerText === "Infinity") {
             result.innerHTML = '<span>Invalid/Empty Input</span>';

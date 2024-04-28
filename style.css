@@ -7,11 +7,11 @@
 }
 
 body {
-    display: flex;
+    display: grid;
+    justify-items: center;
     margin-top: 10vh;
     justify-content: center;
     background-image: url("background.jpg");
-
 }
 
 .main {
@@ -95,4 +95,19 @@ button:hover {
     background-color: rgb(187 184 184);
     box-shadow: 2px 2px 4px #888888;
     cursor: pointer;
+}
+
+.facts{
+    font-size: medium;
+    background-color: #fff7d6e6;
+    margin: 10vh 5vw;
+    padding: 10px 5px;
+    width: 90%;
+    text-align: center;
+    border-radius: 9px;
+}
+.facts span{
+    color: #5c5c5ced;
+    font-weight: 550;
+    margin-left: 9px;
 }
